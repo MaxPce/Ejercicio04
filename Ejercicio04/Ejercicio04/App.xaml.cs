@@ -10,7 +10,7 @@ namespace Ejercicio04
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new BatteryDemo();
         }
 
         protected override void OnStart()
