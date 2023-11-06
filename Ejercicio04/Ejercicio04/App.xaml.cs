@@ -10,7 +10,12 @@ namespace Ejercicio04
         {
             InitializeComponent();
 
-            MainPage = new BatteryDemo();
+            var navigationPage = new NavigationPage(new BatteryDemo());
+
+            navigationPage.Navigation.PushAsync(new TextToSpeechDemo());
+
+            MainPage = navigationPage;
+
         }
 
         protected override void OnStart()
